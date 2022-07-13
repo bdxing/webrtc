@@ -64,5 +64,8 @@ module.exports = {
         // 解开 localhost 封锁
         historyApiFallback: true,
         allowedHosts: "all",
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     }
 };
