@@ -52,13 +52,14 @@ module.exports = {
         static: {
             directory: Path.join(__dirname, 'src'),
         },
-        // server: {
-        //     type: "https",
-        //     options: {
-        //         key: fs.readFileSync('./localhost-key.pem'),
-        //         cert: fs.readFileSync('./localhost.pem')
-        //     }
-        // },
+        server: {
+            type: "https",
+            options: {
+                key: fs.readFileSync('./test.com-key.pem'),
+                cert: fs.readFileSync('./test.com.pem')
+            }
+        },
+        host: "test.com",
         port: 666,
 
         // 解开 localhost 封锁
